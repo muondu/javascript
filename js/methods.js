@@ -57,14 +57,4 @@ console.log(returnSmallestNumber;)
 
 
 //console.log(addTwoNumbers(num1, num2));
-
-
-
-
-
-
-
-
-
-
 */
