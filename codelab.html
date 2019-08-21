@@ -4,6 +4,7 @@
 
 <body>
     <script type="text/javascript">
+        // Create three objects
         let myself = {
             firstName: "Munene",
             lastName: "Muondu",
@@ -27,8 +28,25 @@
         }
 
 
+
+
         console.log(myself.awesomeQuote);
         console.log(myBrother.awesomeQuote);
         console.log(myFriend.awesomeQuote);
+
+
+
+        // Create an array of objects
+        let listOfObject = [myself, myBrother, myFriend];
+
+        console.log(listOfObject);
+        
+            
+        listOfObject.forEach(function(item, index, myArray) {
+            document.write(item.firstName + " " + item.lastName); 
+            document.write(item.yearOfBirth + "</br >");
+            document.write(item.awesomeQuote + "</br >");
+            document.write(item.hasFriends + "</br >  </br > </br >");
+        })
     </script>
 </body></html>

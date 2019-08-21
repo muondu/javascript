@@ -1,0 +1,101 @@
+<html>
+<head>
+    <!--STYLESHEET-->    
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Create OBJECTS
+
+        let planet1 = {
+            name: 'Mercury',
+            howManyMoons: '0',
+            howFarIsTheSunInKm: 57.91,
+            whatPlanetInTheSolarSystem: 1
+        };
+        let planet2 = {
+            name: 'Venus',
+            howManyMoons: '0',
+            howFarIsTheSunInKm: 108.2,
+            whatPlanetIsTheSolarSystem: 2
+        };
+        let planet3 = {
+            name: 'Earth',
+            howManyMoons: '1',
+            howFarIsTheSunInKm: 149.6,
+            whatPlanetIsTheSolarSystem: 3
+        };
+        let planet4 = {
+            name: 'Mars',
+            howManyMoons: 2,
+            howFarIsTheSunInKm: 227.9,
+            whatPlanetIsTheSolarSystem: 4
+        };
+        let planet5 = {
+            name: 'Jupiter',
+            howManyMoons: '79',
+            howFarIsTheSunInKm: 778.5,
+            whatPlanetIsTheSolarSystem: 5
+        };
+        let planet6 = {
+            name: 'Saturn',
+            howManyMoons: 62,
+            howFarIsTheSunInKm: '1.434 ',
+            whatPlanetIsTheSolarSystem: 6
+        };
+        let planet7 = {
+            name: 'Uranus',
+            howManyMoons: 27,
+            howFarIsTheSunInKm: '2.871',
+            whatPlanetIsTheSolarSystem: 8
+        };
+        let planet8 = {
+            name: 'Neptune',
+            howManyMoons: 14,
+            howFarIsTheSunInKm: 4.495,
+            whatPlanetIsTheSolarSystem: 9
+        };
+
+
+
+        console.log(planet1);
+
+        console.log(planet2);
+
+        console.log(planet3);
+
+        console.log(planet4);
+
+        console.log(planet5);
+
+        console.log(planet6);
+
+        console.log(planet7);
+
+        console.log(planet8);
+        console.log('------------- SEPARATOR ------------------');
+        
+        //List of the planets
+        let listOfPlanets = [planet1,planet2,planet3,planet4,planet5,planet6,planet7,planet8];
+        
+        
+        listOfPlanets.forEach(showPlanet);
+  
+        
+        
+        function showPlanet(item,index,array){
+            console.log(item.name); 
+            console.log(item.howManyMoons);
+            console.log(item.howFarIsTheSunInKm); 
+            console.log(item.whatPlanetInTheSolarSystem);
+            console.log('');
+        }
+       
+      
+        
+        
+        
+        
+    </script>
+</body></html>

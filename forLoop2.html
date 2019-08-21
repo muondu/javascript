@@ -1,0 +1,30 @@
+
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+      let friends = ['John','Nelson','Nevil'];
+
+
+
+friends.forEach(function(item, index, array){
+    if(item === 'John'){
+        item = item.toUpperCase();
+    }else{
+        item = item.toLocaleLowerCase();
+    }
+    console.log(index, item);
+});
+
+
+    </script>
+
+
+
+</body>
+
+</html>
