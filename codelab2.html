@@ -1,101 +1,259 @@
 <html>
+
 <head>
-    <!--STYLESHEET-->    
+    <!--STYLESHEET-->
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
-    <script type="text/javascript">
-        // Create OBJECTS
+    <div class="container">
+        <div class="row" id="demo"></div>
+        <!--       <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercury</h5>
+                        <p class="card-text">Mercury</p>
+                        <p class="card-text">Number of moons:0</p>
+                        <p class="card-text">Distace from the sun: 57.91</p>
+                        <p class="card-text">Position of the planet: 1</p>
 
-        let planet1 = {
-            name: 'Mercury',
-            howManyMoons: '0',
-            howFarIsTheSunInKm: 57.91,
-            whatPlanetInTheSolarSystem: 1
-        };
-        let planet2 = {
-            name: 'Venus',
-            howManyMoons: '0',
-            howFarIsTheSunInKm: 108.2,
-            whatPlanetIsTheSolarSystem: 2
-        };
-        let planet3 = {
-            name: 'Earth',
-            howManyMoons: '1',
-            howFarIsTheSunInKm: 149.6,
-            whatPlanetIsTheSolarSystem: 3
-        };
-        let planet4 = {
-            name: 'Mars',
-            howManyMoons: 2,
-            howFarIsTheSunInKm: 227.9,
-            whatPlanetIsTheSolarSystem: 4
-        };
-        let planet5 = {
-            name: 'Jupiter',
-            howManyMoons: '79',
-            howFarIsTheSunInKm: 778.5,
-            whatPlanetIsTheSolarSystem: 5
-        };
-        let planet6 = {
-            name: 'Saturn',
-            howManyMoons: 62,
-            howFarIsTheSunInKm: '1.434 ',
-            whatPlanetIsTheSolarSystem: 6
-        };
-        let planet7 = {
-            name: 'Uranus',
-            howManyMoons: 27,
-            howFarIsTheSunInKm: '2.871',
-            whatPlanetIsTheSolarSystem: 8
-        };
-        let planet8 = {
-            name: 'Neptune',
-            howManyMoons: 14,
-            howFarIsTheSunInKm: 4.495,
-            whatPlanetIsTheSolarSystem: 9
-        };
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Venus</h5>
+                        <p class="card-text">Earth</p>
+                        <p class="card-text">Number of moons:0</p>
+                        <p class="card-text">Distace from the sun:108.2</p>
+                        <p class="card-text">Position of the planet:2</p>
+
+                    </div>
+                </div>
 
 
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Earth</h5>
+                        <p class="card-text">Earth</p>
+                        <p class="card-text">Number of moons:1</p>
+                        <p class="card-text">Distace from the sun: 149.6</p>
+                        <p class="card-text">Position of the pllanet: 3</p>
 
-        console.log(planet1);
+                    </div>
+                </div>
 
-        console.log(planet2);
 
-        console.log(planet3);
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mars</h5>
+                        <p class="card-text">Mars</p>
+                        <p class="card-text">Number of moons:2</p>
+                        <p class="card-text">Distace from the sun: 227.9</p>
+                        <p class="card-text">Position of the planet: 4</p>
 
-        console.log(planet4);
+                    </div>
+                </div>
 
-        console.log(planet5);
 
-        console.log(planet6);
+            </div>
 
-        console.log(planet7);
 
-        console.log(planet8);
-        console.log('------------- SEPARATOR ------------------');
-        
-        //List of the planets
-        let listOfPlanets = [planet1,planet2,planet3,planet4,planet5,planet6,planet7,planet8];
-        
-        
-        listOfPlanets.forEach(showPlanet);
-  
-        
-        
-        function showPlanet(item,index,array){
-            console.log(item.name); 
-            console.log(item.howManyMoons);
-            console.log(item.howFarIsTheSunInKm); 
-            console.log(item.whatPlanetInTheSolarSystem);
-            console.log('');
-        }
-       
-      
-        
-        
-        
-        
-    </script>
-</body></html>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Jupiter</h5>
+                        <p class="card-text">Jupiter</p>
+                        <p class="card-text">Number of moons:79</p>
+                        <p class="card-text">Distace from the sun: 778.5</p>
+                        <p class="card-text">Position of the planet: 5</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Saturn</h5>
+                        <p class="card-text">Saturn</p>
+                        <p class="card-text">Number of moons:62</p>
+                        <p class="card-text">Distace from the sun:1.434</p>
+                        <p class="card-text">Position of the planet:6</p>
+
+                    </div>
+                </div>
+
+
+            </div>e
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Uranus</h5>
+                        <p class="card-text">Uranus</p>
+                        <p class="card-text">Number of moons:27</p>
+                        <p class="card-text">Distace from the sun: 2.871</p>
+                        <p class="card-text">Position of the pllanet: 7</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Neptune</h5>
+                        <p class="card-text">Neptune</p>
+                        <p class="card-text">Number of moons:14</p>
+                        <p class="card-text">Distace from the sun: 4.495</p>
+                        <p class="card-text">Position of the planet: 8</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>-->
+        <script type="text/javascript">
+            // Create OBJECTS OF PLANETS
+
+            let planet1 = {
+                name: 'Mercury',
+                howManyMoons: '0',
+                howFarIsTheSunInKm: 57.91,
+                whatPlanetIsTheSolarSystem: 1
+            };
+            let planet2 = {
+                name: 'Venus',
+                howManyMoons: '0',
+                howFarIsTheSunInKm: 108.2,
+                whatPlanetIsTheSolarSystem: 2
+            };
+            let planet3 = {
+                name: 'Earth',
+                howManyMoons: '1',
+                howFarIsTheSunInKm: 149.6,
+                whatPlanetIsTheSolarSystem: 3
+            };
+            let planet4 = {
+                name: 'Mars',
+                howManyMoons: 2,
+                howFarIsTheSunInKm: 227.9,
+                whatPlanetIsTheSolarSystem: 4
+            };
+            let planet5 = {
+                name: 'Jupiter',
+                howManyMoons: '79',
+                howFarIsTheSunInKm: 778.5,
+                whatPlanetIsTheSolarSystem: 5
+            };
+            let planet6 = {
+                name: 'Saturn',
+                howManyMoons: 62,
+                howFarIsTheSunInKm: '1.434 ',
+                whatPlanetIsTheSolarSystem: 6
+            };
+            let planet7 = {
+                name: 'Uranus',
+                howManyMoons: 27,
+                howFarIsTheSunInKm: '2.871',
+                whatPlanetIsTheSolarSystem: 8
+            };
+            let planet8 = {
+                name: 'Neptune',
+                howManyMoons: 14,
+                howFarIsTheSunInKm: 4.495,
+                whatPlanetIsTheSolarSystem: 9
+            };
+
+
+
+            console.log(planet1);
+
+            console.log(planet2);
+
+            console.log(planet3);
+
+            console.log(planet4);
+
+            console.log(planet5);
+
+            console.log(planet6);
+
+            console.log(planet7);
+
+            console.log(planet8);
+            console.log('~~~~~~~~~~~~~ SEPARATOR ~~~~~~~~~~~~~');
+
+            
+            //List of the planets
+            // let listOfPlanets = [planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8];
+             let listOfPlanets = [planet1, planet2, planet3, planet4, planet5, planet6, planet7, planet8];
+
+            //Getting and element by the ID
+            let demo = document.getElementById('demo');
+            //Looping through each component
+            listOfPlanets.forEach(showPlanet);
+
+            //Doing a function
+            function showPlanet(item, index, array) {
+
+                //Creating an element
+                let insideDiv = document.createElement('div');
+                insideDiv.className = 'col-md-3';
+
+
+                console.log(item.name);
+                console.log(item.howManyMoons);
+                console.log(item.howFarIsTheSunInKm);
+                console.log(item.whatPlanetInTheSolarSystem);
+                console.log('');
+
+                // Create the HTML CONTENT THAR WILL CNTAIN THE CARDS
+                let thePlanetCardHtml = `
+                
+
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">  ${item.name} </h5>
+                                            <p class="card-text">Number of moons: ${item.howManyMoons}</p>
+                                            <p class="card-text">Distace from the sun: ${item.howFarIsTheSunInKm}</p>
+                                            <p class="card-text">Position of the planet: ${item.whatPlanetIsTheSolarSystem} </p>
+
+                                        </div>
+                                    </div>
+                            
+                      
+`;
+
+
+
+                insideDiv.innerHTML = thePlanetCardHtml;
+
+
+                demo.append(insideDiv)
+            }
+            
+        </script>
+    </div>
+</body>
+
+</html>
