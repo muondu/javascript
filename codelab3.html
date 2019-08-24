@@ -1,17 +1,116 @@
-<!DOCTYPE html>
 <html>
 
-<body id="demo">
+<head>
+</head>
+
+<body>
+
+    <div id="friends" class="row"></div>
+
+
+    <script type="text/javascript">
+        
+        
+        let friend1 = {
+            firtName: 'John',
+            lastName: 'Kamau',
+            yearOfBirth: 2007,
+            email: '845@gmail.com',
+            phoneNumber: '0722984521',
+            town: 'Nairobi',
+            citizenship: 'Kenyan'
+        };
+
+        let friend2 = {
+            firtName: 'Nathan',
+            lastName: 'Kibet',
+            yearOfBirth: 2006,
+            email: 'nathankibet@gmail.com',
+            phoneNumber: 0722589647,
+            town: 'Nairobi',
+            citizenship: 'Kenyan'
+        };
+        let friend3 = {
+            firtName: 'Mark',
+            lastName: 'Mwangi',
+            yearOfBirth: 2008,
+            email: '7893@gmail.com',
+            phoneNumber: '0722589674',
+            town: 'Nairobi',
+            citizenship: 'Kenyan'
+        };
+        let friend4 = {
+            firtName: 'Victor',
+            lastName: 'Thiongo',
+            yearOfBirth: 2007,
+            email: '8594@gmail.com',
+            phoneNumber: '0722598461',
+            town: 'Nairobi',
+            citizenship: 'Kenyan'
+        };
+        let friend5 = {
+            firtName: 'Jef',
+            lastName: 'Kingori',
+            yearOfBirth: 2008,
+            email: '8945@gmail.com',
+            phoneNumber: '072259631478',
+            town: 'Nairobi',
+            citizenship: 'Kenyan'
+        };
 
 
 
+        let br = '';
 
-    <!--    <script src="js/main.js"></script>-->
-    <!--    <script src="js/objects.js"></script>-->
-    <!--<script src="js/array.js"></script>-->
-    <!--<script src="js/methods.js"></script>-->
-    <script src="js/object2.js"></script>
+        
+        // The DIV where we will show our list of friends
+        let friendsElement = document.getElementById('friends');
+
+        // An array that has our friends
+        let listOfObjects = [friend1, friend2, friend3, friend4, friend5];
+
+        // Method that whows our list of friends
+        function showListOfFriends(item, index, array) {
+            console.log(item.firtName);
+            console.log(item.lastName);
+            console.log(item.yearOfBirth);
+            console.log(item.email);
+            console.log(item.phoneNumber);
+            console.log(item.town);
+            console.log(item.citizenship);
+            console.log(br);
+            let theFriendCardHtml = `
+                
+
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">  Friends </h5>
+                                            <p class="card-text">${item.firtName}</p>
+                                            <p class="card-text">${item.lastName}</p>
+                                            <p class="card-text">${item.yearOfBirth}</p>
+                                            <p class="card-text">${item.email} </p>
+                                             <p class="card-text">${item.phoneNumber} </p>
+                                            <p class="card-text">${item.town}</p>
+                                            <p class="card-text">${item.citizenship} </p>
+                                            
+                                        </div>
+                                    </div>
+               `;
+        
+        }
+
+        
+        // the forEach()
+        listOfObjects.forEach(showListOfFriends);
+        
+         
+    </script>
+
 
 </body>
+
+
+
+
 
 </html>
