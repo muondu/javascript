@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
@@ -9,8 +10,7 @@
 
 
     <script type="text/javascript">
-        
-        
+        //Creating objects of my friends
         let friend1 = {
             firtName: 'John',
             lastName: 'Kamau',
@@ -59,10 +59,10 @@
         };
 
 
-
+        //Doing a br
         let br = '';
 
-        
+
         // The DIV where we will show our list of friends
         let friendsElement = document.getElementById('friends');
 
@@ -79,15 +79,23 @@
             console.log(item.town);
             console.log(item.citizenship);
             console.log(br);
+
+
+            // CREATE THE COLUMN ELEMENT
+            var ourColumnElement = document.createElement('div');
+
+            // Add the class name col-md-3
+            ourColumnElement.className = 'col-md-3';
+            // CREATE THE HTML CONTENT THAR WILL CONTAIN THE CARD
             let theFriendCardHtml = `
                 
 
                                     <div class="card" style="width: 18rem;">
                                         <div class="card-body">
-                                            <h5 class="card-title">  Friends </h5>
-                                            <p class="card-text">${item.firtName}</p>
+                                            <h5 class="card-title"> ${item.firtName} </h5>
                                             <p class="card-text">${item.lastName}</p>
                                             <p class="card-text">${item.yearOfBirth}</p>
+                                            <p class="card-text">age: ${2019 - item.yearOfBirth}</p>
                                             <p class="card-text">${item.email} </p>
                                              <p class="card-text">${item.phoneNumber} </p>
                                             <p class="card-text">${item.town}</p>
@@ -96,21 +104,20 @@
                                         </div>
                                     </div>
                `;
-        
+
+            //PUTING THE CARD INSIDE HTML
+            ourColumnElement.innerHTML = theFriendCardHtml;
+            friendsElement.append(ourColumnElement);
+
+
         }
 
-        
+
         // the forEach()
         listOfObjects.forEach(showListOfFriends);
-        
-         
     </script>
 
 
 </body>
-
-
-
-
 
 </html>

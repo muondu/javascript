@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--CREATING A ROW WITH AN ID CALLED OBJ-->
+    <div class="row" id="obj"></div>
+    <script type="text/javascript">
+        //CREATING AN OBJECT
+        let car1 = {
+            priceInKsh: 1923426,
+            speedInKm: 249,
+            town: 'Pennsylvania',
+            make: 'Subaru',
+            model: 'Ascent',
+            yearOfManufacture: 2012
+        }
+        let car2 = {
+            priceInKsh: 6323521,
+            speedInKm: 209,
+            town: 'New Jersey',
+            make: 'Mercedes-Benz',
+            model: 'A-Class',
+            yearOfManufacture: 2016
+        }
+        let car3 = {
+            priceInKsh: 310023180,
+            speedInKm: 420,
+            town: 'Arizona',
+            make: 'Mistubishi',
+            model: 'RVR',
+            yearOfManufacture: 2011
+        }
+        let car4 = {
+            price: 5522094,
+            speedInKm: 250,
+            town: 'New York',
+            make: 'BMW',
+            model: 'M3',
+            yearOfManufacture: 2013
+        }
+        let car5 = {
+            priceInKsh: 2455987,
+            speedInKm: 193,
+            town: 'Massachusetts',
+            make: 'nissan',
+            model: '37OZ',
+            yearOfManufacture: 2010
+
+        }
+        let car6 = {
+            priceInKsh: 15705228,
+            speedInKm: 209,
+            town: 'California',
+            make: 'Jarguar',
+            model: 'XE',
+            yearOfManufacture: 2015
+
+        }
+        let car7 = {
+            priceInKsh: 7445520,
+            speedInKm: 190,
+            town: 'Florida',
+            make: 'Landqruzier',
+            model: 'VX',
+            yearOfManufacture: 2019
+        }
+        let car8 = {
+            priceInKsh: 4839588,
+            speedInKm: 209,
+            town: 'Texas',
+            make: 'lamboghini',
+            model: 'Urus',
+            yearOfManufacture: 2016
+        }
+        let car9 = {
+            priceInKsh: 337084000,
+            speedInKm: 420,
+            town: 'Washington',
+            make: 'Ferari',
+            model: '812 Superfast',
+            yearOfManufacture: 2014
+        }
+        let car10 = {
+            priceInKsh: 2455987,
+            speedInKm: 349,
+            town: 'Hawwai',
+            make: 'bugatti',
+            model: 'Chiron',
+            yearOfManufacture: 2018
+
+
+        }
+        //MAKING A LIST OF OBJECTS
+        let listOfObjects = [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10];
+        //GETING OBJECT BY THE ID
+        let obj = document.getElementById('obj');
+
+        //Doing a function
+        function showCars(item, index, array) {
+            //CREATING AN ELEMENT
+            let insideDiv = document.createElement('div');
+            insideDiv.className = 'col-md-3';
+
+
+            console.log(item.make);
+            console.log(item.model);
+            console.log(item.yearOfManufacture);
+            console.log(item.speedInKm);
+            console.log(item.town);
+            console.log(item.priceInKsh);
+            console.log('');
+            // Create the HTML CONTENT THAR WILL CONTAIN THE CARDS
+            let theCarCardHtml = `
+                
+
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">  ${item.make} </h5>
+                                            <p class="card-text">Number of moons: ${item.model}</p>
+                                            <p class="card-text">Distace from the sun: ${item.yearOfManufacture}</p>
+                                            <p class="card-text">Position of the planet: ${item.speedInKm} </p>
+                                            <p class="card-text">Position of the planet: ${item.town} </p>
+                                             <p class="card-text">Position of the planet: ${item.priceInKsh} </p>
+                                        </div>
+                                    </div>
+                            
+                      
+    `;
+            //PUTING THE CARD INSIDE HTML
+            insideDiv.innerHTML = theCarCardHtml;
+            obj.append(insideDiv)
+        }
+
+        listOfObjects.forEach(showCars);
+    </script>
+
+
+</body>
+
+</html>
