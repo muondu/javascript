@@ -7,9 +7,9 @@ let prop1 = 'Test prop outside';
 let obj1 = {
     prop1: 'value1',
     prop2: 'value2',
-    prop3: function(){
+    prop3: function () {
         console.log(this.prop1);
-        
+
         console.log(prop1);
     }
 }

@@ -27,7 +27,7 @@
         }
         let car3 = {
             priceInKsh: 310023180,
-            speedInKm: 420,
+            speedInKm: 200,
             town: 'Arizona',
             make: 'Mistubishi',
             model: 'RVR',
@@ -43,16 +43,16 @@
         }
         let car5 = {
             priceInKsh: 2455987,
-            speedInKm: 193,
+            speedInKm: 315,
             town: 'Massachusetts',
             make: 'nissan',
             model: '37OZ',
-            yearOfManufacture: 2010
+            yearOfManufacture: 2019
 
         }
         let car6 = {
             priceInKsh: 15705228,
-            speedInKm: 209,
+            speedInKm: 250,
             town: 'California',
             make: 'Jarguar',
             model: 'XE',
@@ -69,7 +69,7 @@
         }
         let car8 = {
             priceInKsh: 4839588,
-            speedInKm: 209,
+            speedInKm: 356,
             town: 'Texas',
             make: 'lamboghini',
             model: 'Urus',
@@ -77,7 +77,7 @@
         }
         let car9 = {
             priceInKsh: 337084000,
-            speedInKm: 420,
+            speedInKm: 339,
             town: 'Washington',
             make: 'Ferari',
             model: '812 Superfast',
@@ -85,16 +85,28 @@
         }
         let car10 = {
             priceInKsh: 2455987,
-            speedInKm: 349,
+            speedInKm: 379,
             town: 'Hawwai',
             make: 'bugatti',
-            model: 'Chiron',
+            model: 'Divo',
             yearOfManufacture: 2018
 
-
         }
+
+        // Add a new property called owner
+        car1.owner = 'Kendi';
+        car2.owner = 'Diana';
+        car3.owner = 'Makena';
+        car4.owner = 'Kingori';
+        car5.owner = 'Sharon';
+        car6.owner = 'Kome';
+        car7.owner = 'Daniel';
+        car8.owner = 'Mugambi';
+        car9.owner = 'Nesh';
+        car10.owner = 'Malli';
         //MAKING A LIST OF OBJECTS
         let listOfObjects = [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10];
+
         //GETING OBJECT BY THE ID
         let obj = document.getElementById('obj');
 
@@ -111,6 +123,7 @@
             console.log(item.speedInKm);
             console.log(item.town);
             console.log(item.priceInKsh);
+            console.log(item.owner);
             console.log('');
             // Create the HTML CONTENT THAR WILL CONTAIN THE CARDS
             let theCarCardHtml = `
@@ -119,11 +132,12 @@
                                     <div class="card" style="width: 18rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">  ${item.make} </h5>
-                                            <p class="card-text">Number of moons: ${item.model}</p>
-                                            <p class="card-text">Distace from the sun: ${item.yearOfManufacture}</p>
-                                            <p class="card-text">Position of the planet: ${item.speedInKm} </p>
-                                            <p class="card-text">Position of the planet: ${item.town} </p>
-                                             <p class="card-text">Position of the planet: ${item.priceInKsh} </p>
+                                            <p class="card-text>Model: ${item.model}</p>
+                                            <p class="card-text">Year of manufacture: ${item.yearOfManufacture}</p>
+                                            <p class="card-text">Speed In Km: ${item.speedInKm} </p>
+                                            <p class="card-text">Town: ${item.town} </p>
+                                             <p class="card-text">Price in ksh: ${item.priceInKsh} </p>
+                                            <p class="card-text">Owner: ${item.owner} </p>
                                         </div>
                                     </div>
                             
@@ -133,6 +147,7 @@
             insideDiv.innerHTML = theCarCardHtml;
             obj.append(insideDiv)
         }
+
 
         listOfObjects.forEach(showCars);
     </script>
