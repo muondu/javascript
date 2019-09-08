@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <h1>Javascript Math.random()</h1>
+    <p>Every time you click the button, getTheButton(min, max) returns a random number between 0
+        and 9 (both included):</p>
+    <button onclick="document.getElementById('demo').innerHTML = getTheButton(0,5)">Click Me</button>
+
+
+    <p id="demo"></p>
+    <script>
+        /*  function getTheButton(min,max){
+        return Math.floor(Math.random() * (max - min) ) + min;
+      }
+      let text = "or";
+*/
+        function getTheButton(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</body>
+
+</html>
