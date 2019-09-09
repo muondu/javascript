@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Javascript Comparisons</h1>
+    <p>Input your age and click the button:</p>
+    <p>Put your age to know you are old enough to take alcohol.</p>
+    <input id="age" value="18" />
+    
+    <button onclick="myFunction()">Try it</button>
+    
+    
+    <p id="demo"></p>
+    
+    <script>
+    function myFunction() {
+        var age, alcholable;
+        age = Number(document.getElementById("age").value);
+        if (isNaN(age)) {
+            alcholable = "Input is not a number";
+        }else {
+    alcholable = (age < 18) ? "Too young" : "Old enough";
+  }
+
+        document.getElementById("demo").innerHTML = alcholable;
+    } 
+    </script>
+    </body>
+</html>
