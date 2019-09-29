@@ -1,0 +1,22 @@
+<html>
+    <body>
+        
+        <h2>Javascript String Methods</h2>
+        
+        <p>Replace "Mallli" with "Manna" in the paragraph below:</p>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <p id="demo">Say hello to Malli</p>
+        
+        <script>
+            function myFunction(){
+                var str = document.getElementById("demo").innerHTML;
+                var txt = str.replace("Malli","Manna");
+                document.getElementById("demo").innerHTML = txt;
+            }
+        
+        </script>
+    
+    </body>
+</html>
