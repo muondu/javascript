@@ -1,0 +1,9 @@
+JAVASCRIPRT RULES OF ADITION
+
+1. number + number = number  e.g 5 + 5 = 10
+
+2. string + string = string  e.g "5" + "5" = "55"
+
+3. number + string = string  e.g "5" + 5 = 55
+
+4. number + number + string = e.g 5 + 5 + "5" = 105
