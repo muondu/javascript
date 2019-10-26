@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Variables</title>
+</head>
+
+<body>
+    <p>Input 1</p>
+    <input id="1">
+    
+<!--
+    <p>Input 2</p>
+    <input id="2">
+    
+    <p>Input 3</p>
+    <input id="3">
+    
+    
+-->
+    <div id="helo"></div>
+    <button onclick="squareRoot()">square root</button>
+    <script type="text/javascript">
+//        function multiplication(){
+//            var a = document.getElementById("1").value;
+//            var b = document.getElementById("2").value;
+//            var c = document.getElementById("3").value;
+//            document.getElementById("helo").innerHTML = a * b * c;
+//            }
+//        
+        
+        function squareRoot(){
+            
+            //To check an if statement whether the square root symbol is clicked
+            
+            var d = document.getElementById("1").value;
+            document.getElementById("helo").innerHTML = Math.sqrt(d);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A caculator</title>
+    <script type="text/javascript">
+        function squareRoot() {
+            if (document.getElementById("squarerootbutton").clicked == true) {
+                var numbers = document.getElementsByClassName("numbers").value;
+                document.getElementById("name").innerHTML = Math.sqrt();
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <p id="demo" onclick="squareRoot"></p>
+    <div class="wrap">
+        <form name="cal">
+            <input id="name" type="text" name="display">
+            <br><br>
+            <input class="numbers" type="button" value="9" onclick="cal.display.value+='9'">
+            <input class="numbers" type="button" value="8" onclick="cal.display.value+='8'">
+            <input class="numbers" type="button" value="7" onclick="cal.display.value+='7'">
+            <input  type="button" value="+" onclick="cal.display.value+='+'">
+            <br><br>
+            <input class="numbers" type="button" value="6" onclick="cal.display.value+='6'">
+            <input class="numbers" type="button" value="5" onclick="cal.display.value+='5'">
+            <input class="numbers" type="button" value="4" onclick="cal.display.value+='4'">
+            <input type="button" value="-" onclick="cal.display.value+='-'">
+            <br><br>
+            <input class="numbers" type="button" value="3" onclick="cal.display.value+='3'">
+            <input class="numbers" type="button" value="2" onclick="cal.display.value+='2'">
+            <input class="numbers" type="button" value="1" onclick="cal.display.value+='1'">
+            <input type="button" value="*" onclick="cal.display.value+='*'">
+            <br><br>
+            <input class="numbers" type="button" value="0" onclick="cal.display.value+='0'">
+            <input type="button" value="/" onclick="cal.display.value+='/'">
+            <input type="button" value="%" onclick="cal.display.value+='%'" onclick = squareRoot>
+            <input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)">
+            <br><br>
+            <input id="squarerootbutton" type="button" id="sqrt" value="√" onclick="cal.display.value+='√'">
+            <input type="button" value="DELETE" onclick="cal.display.value= ''" id="del">
+        </form>
+    </div>
+</body>
+
+</html>
